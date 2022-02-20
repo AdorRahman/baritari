@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <header>
+      <nav
+        style="
+          backdrop-filter: blur(16px);
+          background-color: rgba(255, 255, 255, 0.7);
+        "
+        class="flex z-[100] fixed top-0 p-2 px-12 flex-wrap items-center justify-between w-full py-4 md:py-0 text-lg text-black bg-white"
+      >
+        <div>
+          <a href="#">
+            <img src="logo.svg" alt="" srcset="" />
+          </a>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <div
+            class="font-sans mr-8 text-black bg-white bg-opacity-50 hover:bg-opacity-70 flex items-center justify-center"
+          >
+            <div class="border rounded overflow-hidden flex">
+              <input type="text" class="px-4 py-1" placeholder="Search..." />
+              <button class="flex items-center justify-center px-4 border-l">
+                <svg
+                  class="h-4 w-4 text-grey-dark"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul
+            class="pt-4 text-base text-black uppercase md:flex md:justify-between md:pt-0"
+          >
+            <li>
+              <a
+                class="md:p-4 py-2 block border-black hover:text-blue-800"
+                href="#"
+                >login</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 font-bold block hover:text-blue-800 text-blue-700"
+                href="#"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="after:absolute h-[100vh] w-full bg-center object-cover after:z-10 bg-no-repeat bg-cover bg-[url('/home4.jpg')] after:w-full after:h-[100vh] after:top-0 after:left-0 after:content-[''] after:bg-black after:bg-opacity-30"
+    >
+      <div
+        class="lg:px-44 py-44 px-10 h-full rounded-xl z-50 relative text-black"
+      >
+        <div
+          style="
+            backdrop-filter: blur(16px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+          class="bg-white h-full px-8 text-center text-black font-semibold py-12 bg-opacity-70 rounded-2xl"
+        >
+          <div
+            class="uppercase text-xl text-blue-400 md:text-2xl xl:text-[60px]"
+          >
+            rent your house today
+          </div>
+          <div class="mt-8 text-gray-600 text-sm sm:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </div>
+          <button
+            class="relative py-2 px-8 bg-blue-700 text-lg cursor-pointer hover:bg-blue-800 rounded-lg mt-6 text-white"
+          >
+            <span class="font-light">Post</span>
+            <span class="font-bold">- AD</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-white z-50 fixed border-red-50 bg-transparent font-semibold transform -translate-y-1/2 top-1/2"
+    >
+      <div
+        style="
+          border-left: 0px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 53px solid rgb(29 78 216);
+        "
+        class="bg-transparent"
+      ></div>
+      <div
+        style="
+          border-bottom: 19px solid rgb(29 78 216);
+          border-top: 19px solid rgb(29 78 216);
+        "
+        class="bg-blue-700 relative"
+      >
+        <div
+          class="p-4 bg-blue-700 transition-all duration-900 cursor-pointer ease-in-out hover:bg-blue-700 hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:top-1/4 hover:after:p-3 hover:after:bg-blue-700 hover:after:content-['Setting']"
+        >
+          <img src="gear-solid.svg" class="w-4 h-4" alt="" srcset="" />
+        </div>
+        <div
+          class="p-4 bg-blue-700 transition-all duration-900 cursor-pointer ease-in-out hover:bg-blue-700 hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:p-3 hover:after:bg-blue-700 hover:after:content-['Service']"
+        >
+          <img src="headset-solid.svg" class="w-4 h-4" alt="" srcset="" />
+        </div>
+        <a href="#">
+          <div
+            class="p-4 bg-blue-700 transition-all duration-900 cursor-pointer propar ease-in-out hover:bg-blue-700 hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:bottom-[25%] hover:after:p-3 hover:after:bg-blue-700 hover:after:content-['Profile']"
+          >
+            <img src="user-solid.svg" class="w-4 h-4" alt="" srcset="" /></div
+        ></a>
+      </div>
+      <div
+        style="
+          border-right: 50px solid transparent;
+          border-left: 0px solid transparent;
+          border-top: 53px solid rgb(29 78 216);
+        "
+        class="bg-transparent"
+      ></div>
+    </div>
+
+    <div class="relative flex py-0 px-4 ml-20">
+      <div class="py-2.5">
+        <button
+          id="dropdownButton"
+          data-dropdown-toggle="dropdown"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 mx-2 font-light uppercase text-sm px-8 py-1.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          districk
+          <svg
+            class="ml-2 w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="dropdown"
+          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+        >
+          <ul class="py-1" aria-labelledby="dropdownButton">
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Earnings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          id="dropdownButton"
+          data-dropdown-toggle="dropdown"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 uppercase focus:ring-blue-300 mx-2 font-light text-sm px-8 py-1.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          area
+          <svg
+            class="ml-2 w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="dropdown"
+          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+        >
+          <ul class="py-1" aria-labelledby="dropdownButton">
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Earnings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          id="dropdownButton"
+          data-dropdown-toggle="dropdown"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-light mx-2 uppercase text-sm px-8 py-1.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button"
+        >
+          sublet
+          <svg
+            class="ml-2 w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          id="dropdown"
+          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+        >
+          <ul class="py-1" aria-labelledby="dropdownButton">
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Settings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Earnings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                >Sign out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mx-2 cursor-pointer border-[10px] uppercase border-blue-800 bg-blue-500 text-white py-1 px-8 skew-y-0 skew-x-[25deg]"
+      >
+        <div class="-skew-x-[25deg]">
+          <span class="font-light">find</span>
+          <span class="font-bold">rent</span>
+        </div>
+      </div>
+
+      <div
+        class="mx-2 cursor-pointer border-[10px] uppercase border-black py-1 px-8 skew-y-0 skew-x-[25deg]"
+      >
+        <div class="-skew-x-[25deg]">
+          <span class="font-light">sell</span>
+          <span class="font-bold">property</span>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-800 py-44">sss</div>
+  </body>
+
+  <script>
+    const button = document.querySelector("#menu-button");
+    const menu = document.querySelector("#menu");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+</html>
