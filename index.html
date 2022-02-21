@@ -22,7 +22,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
-          class="h-6 w-6 cursor-pointer md:hidden block"
+          class="block w-6 h-6 cursor-pointer md:hidden"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -37,13 +37,13 @@
 
         <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
           <div
-            class="font-sans mr-8 text-black bg-white bg-opacity-50 hover:bg-opacity-70 flex items-center justify-center"
+            class="flex items-center justify-center mr-8 font-sans text-black bg-white bg-opacity-50 hover:bg-opacity-70"
           >
-            <div class="border rounded overflow-hidden flex">
+            <div class="flex overflow-hidden border rounded">
               <input type="text" class="px-4 py-1" placeholder="Search..." />
               <button class="flex items-center justify-center px-4 border-l">
                 <svg
-                  class="h-4 w-4 text-grey-dark"
+                  class="w-4 h-4 text-grey-dark"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -60,14 +60,14 @@
           >
             <li>
               <a
-                class="md:p-4 py-2 block border-black hover:text-blue-800"
+                class="block py-2 border-black md:p-4 hover:text-blue-800"
                 href="#"
                 >login</a
               >
             </li>
             <li>
               <a
-                class="md:p-4 py-2 font-bold block hover:text-blue-800 text-blue-700"
+                class="block py-2 font-bold text-blue-700 md:p-4 hover:text-blue-800"
                 href="#"
                 >Sign Up</a
               >
@@ -80,24 +80,24 @@
       class="after:absolute h-[100vh] w-full bg-center object-cover after:z-10 bg-no-repeat bg-cover bg-[url('/home4.jpg')] after:w-full after:h-[100vh] after:top-0 after:left-0 after:content-[''] after:bg-black after:bg-opacity-30"
     >
       <div
-        class="lg:px-44 py-44 px-10 h-full rounded-xl z-50 relative text-black"
+        class="relative z-50 h-full px-10 text-black lg:px-44 py-44 rounded-xl"
       >
         <div
           style="
-            backdrop-filter: blur(16px);
+            backdrop-filter: blur(10px);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
           "
-          class="bg-white h-full px-8 text-center text-black font-semibold py-12 bg-opacity-70 rounded-2xl"
+          class="h-full p-8 mt-8 font-semibold text-center text-black bg-white bg-opacity-60 rounded-2xl"
         >
           <div
-            class="uppercase text-xl text-blue-400 md:text-2xl xl:text-[60px]"
+            class="uppercase text-xl text-blue-700 md:text-2xl xl:text-[60px]"
           >
             rent your house today
           </div>
-          <div class="mt-8 text-gray-600 text-sm sm:text-base">
+          <div class="mt-8 text-sm text-gray-600 sm:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit.ipsum dolor sit amet, consectetur adipiscing elit,
@@ -105,16 +105,16 @@
             consectetur adipiscing elit.
           </div>
           <button
-            class="relative py-2 px-8 bg-blue-700 text-lg cursor-pointer hover:bg-blue-800 rounded-lg mt-6 text-white"
+            class="relative px-8 py-2 mt-10 text-lg text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800"
           >
             <span class="font-light">Post</span>
-            <span class="font-bold">- AD</span>
+            <span class="font-bold"> AD</span>
           </button>
         </div>
       </div>
     </div>
     <div
-      class="text-white z-50 fixed border-red-50 bg-transparent font-semibold transform -translate-y-1/2 top-1/2"
+      class="fixed z-50 font-semibold text-white transform -translate-y-1/2 bg-transparent border-red-50 top-1/2"
     >
       <div
         style="
@@ -129,7 +129,7 @@
           border-bottom: 19px solid rgb(29 78 216);
           border-top: 19px solid rgb(29 78 216);
         "
-        class="bg-blue-700 relative"
+        class="relative bg-blue-700"
       >
         <div
           class="p-4 bg-blue-700 transition-all duration-900 cursor-pointer ease-in-out hover:bg-blue-700 hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:top-1/4 hover:after:p-3 hover:after:bg-blue-700 hover:after:content-['Setting']"
@@ -158,7 +158,7 @@
       ></div>
     </div>
 
-    <div class="relative flex py-0 px-4 ml-20">
+    <div class="relative flex px-4 py-0 ml-20">
       <div class="py-2.5">
         <button
           id="dropdownButton"
@@ -168,7 +168,7 @@
         >
           districk
           <svg
-            class="ml-2 w-4 h-4"
+            class="w-4 h-4 ml-2"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -185,34 +185,34 @@
 
         <div
           id="dropdown"
-          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+          class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
         >
           <ul class="py-1" aria-labelledby="dropdownButton">
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Dashboard</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Settings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Earnings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Sign out</a
               >
             </li>
@@ -227,7 +227,7 @@
         >
           area
           <svg
-            class="ml-2 w-4 h-4"
+            class="w-4 h-4 ml-2"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -244,34 +244,34 @@
 
         <div
           id="dropdown"
-          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+          class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
         >
           <ul class="py-1" aria-labelledby="dropdownButton">
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Dashboard</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Settings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Earnings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Sign out</a
               >
             </li>
@@ -286,7 +286,7 @@
         >
           sublet
           <svg
-            class="ml-2 w-4 h-4"
+            class="w-4 h-4 ml-2"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -303,34 +303,34 @@
 
         <div
           id="dropdown"
-          class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+          class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700"
         >
           <ul class="py-1" aria-labelledby="dropdownButton">
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Dashboard</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Settings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Earnings</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                 >Sign out</a
               >
             </li>
@@ -355,7 +355,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-blue-800 py-44">sss</div>
+    <div class="bg-blue-800 py-44">dddd</div>
   </body>
 
   <script>
