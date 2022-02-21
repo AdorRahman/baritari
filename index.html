@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white">
     <header>
@@ -39,9 +40,9 @@
           <div
             class="flex items-center justify-center mr-8 font-sans text-black bg-white bg-opacity-50 hover:bg-opacity-70"
           >
-            <div class="flex overflow-hidden border rounded">
+            <div class="flex overflow-hidden">
               <input type="text" class="px-4 py-1" placeholder="Search..." />
-              <button class="flex items-center justify-center px-4 border-l">
+              <button class="flex items-center justify-center px-4">
                 <svg
                   class="w-4 h-4 text-grey-dark"
                   fill="currentColor"
@@ -137,22 +138,23 @@
         style="
           border-bottom: 19px solid #0096ff;
           border-top: 19px solid #0096ff;
+          box-shadow: 8px 0px 26px 0px hsl(0deg 0% 0% / 36%);
         "
         class="relative bg-[#0096ff]"
       >
         <div
-          class="p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:top-1/4 hover:after:p-3 hover:after:bg-[#0096ff] hover:after:content-['Setting']"
+          class="set p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:flex hover:before:absolute hover:before:left-[50px] hover:before:top-[0%] hover:before:content-[''] hover:after:left-[74px] hover:after:top-1/4 hover:after:p-3 hover:after:pr-6 hover:after:bg-[#0096ff] hover:after:rounded-r-full hover:after:content-['Setting']"
         >
           <img src="gear-solid.svg" class="w-4 h-4" alt="" srcset="" />
         </div>
         <div
-          class="p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:p-3 hover:after:bg-[#0096ff] hover:after:content-['Service']"
+          class="set p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:before:absolute hover:before:left-[50px] hover:before:top-[50%] hover:after:-translate-y-1/2 hover:before:content-[''] hover:after:left-[74px] hover:flex hover:after:top-1/2 hover:before:-translate-y-1/2 hover:after:p-3 hover:after:pr-6 hover:after:bg-[#0096ff] hover:after:rounded-r-full hover:after:content-['Service']"
         >
           <img src="headset-solid.svg" class="w-4 h-4" alt="" srcset="" />
         </div>
         <a href="#">
           <div
-            class="p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer propar ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:flex hover:after:left-12 hover:after:bottom-[25%] hover:after:p-3 hover:after:bg-[#0096ff] hover:after:content-['Profile']"
+            class="set p-4 bg-[#0096ff] transition-all duration-900 cursor-pointer propar ease-in-out hover:bg-[#0096ff] hover:after:fixed hover:after:w-auto hover:flex hover:before:absolute hover:before:left-[50px] hover:before:bottom-[0%] hover:before:content-[''] hover:after:left-[74px] hover:after:bottom-[25%] hover:after:p-3 hover:after:pr-6 hover:after:bg-[#0096ff] hover:after:rounded-r-full hover:after:content-['Profile']"
           >
             <img src="user-solid.svg" class="w-4 h-4" alt="" srcset="" /></div
         ></a>
@@ -167,7 +169,7 @@
       ></div>
     </div>
 
-    <div class="relative flex px-4 py-0 ml-20">
+    <div class="relative flex px-12 py-0 ml-20">
       <div class="py-2.5">
         <button
           id="dropdownButton"
@@ -181,6 +183,7 @@
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            pr-16
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -347,7 +350,7 @@
         </div>
       </div>
       <div
-        class="mx-2 cursor-pointer border-[10px] uppercase border-[#0096ff] bg-[#00aeff] text-white py-1 px-8"
+        class="mx-2 cursor-pointer border-[10px] uppercase border-[#0096ff] bg-[#00aeff] hover:bg-[#2abcff] text-white py-1 px-8"
       >
         <div class="">
           <span class="font-light">find</span>
@@ -356,7 +359,7 @@
       </div>
 
       <div
-        class="mx-2 cursor-pointer text-white border-[10px] bg-[#0096ff] hover:bg-[#00aeff] uppercase border-white py-1 px-8"
+        class="mx-2 cursor-pointer relative float-right ml-auto flex justify-end text-white border-[10px] bg-[#0096ff] hover:bg-[#00aeff] uppercase border-white py-1 px-8"
       >
         <div class="">
           <span class="font-light">sell</span>

@@ -1,0 +1,5 @@
+.set:hover::before {
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 24px solid #0096ff;
+}
