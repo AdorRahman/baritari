@@ -2,4 +2,15 @@
   border-top: 24px solid transparent;
   border-bottom: 24px solid transparent;
   border-right: 24px solid #0096ff;
+  z-index: 10;
+}
+.set:hover::after {
+  box-shadow: -1px 0 12px 0px rgb(0 0 0 / 0.2);
+}
+.sd::after {
+  content: url(sd.svg);
+  position: absolute;
+  z-index: -1;
+  left: -8px;
+  top: -78px;
 }
